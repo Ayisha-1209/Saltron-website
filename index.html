@@ -20,15 +20,14 @@
 
 <body class = "bg-primary text-white tracking-wider">
     <header class = "sticky top-0 z-50 transition-all duration-300 md:px-5 lg:px-5">
-
         <nav class = "container flex justify-between items-center">
             <div class = "py-5 text-secondary font-bold text-3xl">
                 <a href="index.html#home">
-                    <img src="logo.png" class=" ml-10 w-64 h-10 md:ml-5 lg:ml-5" alt="logo image"/>
+                    <img src="logo.png" class=" w-56 h-10" alt="logo image"/>
                 </a>
             </div>
             <div>
-                <ul class="hidden lg:flex items-center space-x-6">
+                <ul class="hidden lg:flex text-sm lg:text-base items-center space-x-5 md:mr-0">
                     <li><a href="index.html#home" class = "nav__link hover:text-secondary ease-in duration-200">Home</a></li>
                     <li class="relative">
                         <button id="dropdownButton1" onClick="toggleDropdown1()" class = "nav__link hover:text-secondary ease-in duration-200 flex">Features
@@ -59,7 +58,7 @@
                     </li>
     
                     <li class="relative">
-                        <button id="dropdownButton3" onClick="toggleDropdown3()" class = "nav__link hover:text-secondary ease-in duration-200 flex">About Us<img class="w-6" src="down-arrow-5-svgrepo-com.svg"/>
+                        <button id="dropdownButton3" onClick="toggleDropdown3()" class = "nav__link hover:text-secondary ease-in duration-200 flex">About<img class="w-6" src="down-arrow-5-svgrepo-com.svg"/>
                     </button>
                     <div class="lg:absolute bg-white px-4 left-44 rounded-md md:my-3">
                         <ul id="dropdown3" class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden">
@@ -73,7 +72,7 @@
                     <li><a href="index.html#blog" class = "nav__link internal-link hover:text-secondary ease-in duration-200">Blog</a></li>
                     <li><a href="index.html#contact" class = "nav__link internal-link hover:text-secondary ease-in duration-200">Contact</a></li>
     
-                    <li><button class = "btn"><a href="./pages/products.html">Explore More!!</a></button></li>
+                    <li><button class = "btn"><a href="./pages/products.html">Explore</a></button></li>
                 </ul>
             </div>
     
@@ -146,19 +145,19 @@
                     <div class="home__text text-center py-0 mb-12 md:text-left md:w-3/4 md:px-10">
                         <h1 class="text-3xl md:text-6xl font-bold leading-snug">Lasts <span class="text-secondary">Longer</span></h1>
                         <h1 class="text-3xl md:text-6xl font-bold leading-snug mb-12">Performs<span class="text-secondary"> Stronger</span></h1>
-                        <p class="leading-relaxed mb-10 px-5">This should be used to tell a story and let your users know a little bit more about app and its use, How can it benefit them.</p>
+                        <p class="leading-relaxed mb-10">This should be used to tell a story and let your users know a little bit more about app and its use, How can it benefit them.</p>
                         <button class = "btn"><a href="./pages/products.html">Explore More!!</a></button>
                     </div>
                     <!-- Home Image -->
                     <div class="home__image flex-col flex md:w-[50vw] inset-0 animate-movingY">
-                        <img class="home__image" src="1.png">
+                        <img class="home__image md:pr-5" src="1.png">
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="features" class="bg-primary-light ">
-            <div class="container py-16">
+            <div class="container py-16 md:px-5">
                 <div class="text-center m-auto mb-20 md:w-1/2">
                     <h4 class="font-bold text-secondary mb-4">Our Features</h4>
                     <h1 class="title">Easy to Manage your all needs by Our Services</h1>
@@ -195,7 +194,7 @@
         </section>
 
         <section id="about" >
-            <div class="container py-16 relative">
+            <div class="container py-16 relative md:px-5">
                 <div class="w-72 h-72 bg-blob absolute bottom-60 -right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
 
                 <div class="flex flex-col items-center justify-stretch md:flex-row">
@@ -213,60 +212,57 @@
         </section>
 
         <section id="why?" class="bg-primary-light">
-            <div class="container py-16">
+            <div class="container pt-10 pb-5 md:px-5">
                 <div class="text-center m-auto mb-20 md:w-1/2">
-                    <h4 class="font-bold text-secondary mb-4">we've got more than you need</h4>
+                    <h4 class="font-bold text-secondary mb-4">We've got more than you need</h4>
                     <h1 class="title">Why Choose Saltron?</h1>
                 </div>
             </div>
 
-
         <div class="flex flex-col">
-            <div class="whyCard1 flex flex-col px-32 pb-24 items-center justify-between space-y-2 md:flex-row md:space-y-0 md:space-x-6">
+            <div class="whyCard1 flex flex-col md:px-20 pb-12 items-center justify-between space-y-2 md:flex-row md:space-x-20">
             <!-- Card-1 -->
             <div class="text-center cursor-pointer">
                 <div class="relative bg-secondary inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-primary-dark ease-in duration-200">
-                    <p class="text-6xl">1</p>
+                <p class="text-6xl">1</p>
                 </div>
                 <h3 class="text-xl font-bold py-4">Quality and Durability</h3>
-                <p class="leading-relaxed">Our inverter batteries and solar tubular batteries are built to last, with rugged construction and high-quality components that withstand the rigors of everyday use. You can trust Syrex Energy Solutions to provide reliable power backup solutions that stand the test of time.</p>
+                <p class="leading-relaxed text-left">Our inverter batteries and solar tubular batteries are built to last, with rugged construction and high-quality components that withstand the rigors of everyday use. You can trust Syrex Energy Solutions to provide reliable power backup solutions that stand the test of time.</p>
             </div>
-            
-
             <!-- Card-2 -->
-            <div class="text-center cursor-pointer">
+            <div class="text-center cursor-pointer md:m-0">
                 <div class="relative bg-secondary inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-primary-dark ease-in duration-200">
-                    <p class="text-6xl">2</p>
+                <p class="text-6xl">2</p>
                 </div>
                 <h3 class="text-xl font-bold py-4">Performance and Efficiency</h3>
-                <p class="leading-relaxed">With Syrex Energy Solutions, you can expect superior performance and energy efficiency. Our batteries are designed to deliver consistent power output, ensuring optimal performance for your solar energy system or backup power needs.</p>
+                <p class="leading-relaxed text-left">With Syrex Energy Solutions, you can expect superior performance and energy efficiency. Our batteries are designed to deliver consistent power output, ensuring optimal performance for your solar energy system or backup power needs.</p>
             </div>
         </div>
 
-        <div class="whyCard2 flex flex-col px-32 pb-24 items-center justify-between space-y-2 md:flex-row md:space-y-0 md:space-x-6">
+        <div class="whyCard2 flex flex-col px-16 pb-12 items-center justify-between space-y-2 md:flex-row md:space-x-20">
             <!-- Card-3 -->
-            <div class="text-center cursor-pointer">
+            <div class="text-center cursor-pointer md:pr-14">
                 <div class="relative bg-secondary inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-primary-dark ease-in duration-200">
                     <p class="text-6xl">3</p>
                 </div>
                 <h3 class="text-xl font-bold py-4">Innovation and Technology</h3>
-                <p class="leading-relaxed">We are committed to innovation and staying at the forefront of renewable energy technology. Our team of experts is constantly researching and developing new solutions to improve the performance and reliability of our products, so you can benefit from the latest advancements in the industry.</p>
+                <p class="leading-relaxed text-left">We are committed to innovation and staying at the forefront of renewable energy technology. Our team of experts is constantly researching and developing new solutions to improve the performance and reliability of our products, so you can benefit from the latest advancements in the industry.</p>
             </div>
 
             <!-- Card-4 -->
-            <div class="text-center cursor-pointer">
+            <div class="text-center cursor-pointer md:m-0">
                 <div class="relative bg-secondary inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-primary-dark ease-in duration-200">
-                    <p class="text-6xl">4</p>
+                <p class="text-6xl">4</p>
                 </div>
                 <h3 class="text-xl font-bold py-4">Customer Satisfaction</h3>
-                <p class="leading-relaxed">At Syrex Energy Solutions, customer satisfaction is our top priority. We strive to provide exceptional service and support to our customers, from product selection to installation and beyond. Our knowledgeable team is here to answer your questions and help you find the perfect energy solution for your needs.</p>
+                <p class="leading-relaxed text-left">At Syrex Energy Solutions, customer satisfaction is our top priority. We strive to provide exceptional service and support to our customers, from product selection to installation and beyond. Our knowledgeable team is here to answer your questions and help you find the perfect energy solution for your needs.</p>
             </div>
         </div>
         </div>
         </section>
 
         <section id="testimonials" class="py-20">
-            <div class="container">
+            <div class="container md:px-10">
 
             <div class="max-w-md mx-auto text-center">
                 <h2 class="text-3xl font-bold font-oswald uppercase lg:text-6xl">CUSTOMER REVIEW</h2>
@@ -349,7 +345,7 @@
         </section>
 
         <section id="blog" class="bg-primary-light internal-link">
-            <div class="container py-16">
+            <div class="container py-16 px-10">
                 <div class="text-center m-auto mb-20 md:w-1/2">
                     <h4 class="font-bold text-secondary mb-4">Our Blogs</h4>
                     <h1 class="title">Latest Updates, Solutions And Company News - Get To Know More!!</h1>
@@ -479,8 +475,8 @@
             <div class="bg-primary-dark relative">
                 <div class="container py-10">
                     <div class="grid gap-10 md:grid-cols-3 pb-10">
-    
-                        <div class="space-y-6">
+
+                        <div class="space-y-6 md:ml-5">
                             <h4 class="font-bold text-lg">About Saltron</h4>
                             <p class="leading-relaxed">This should be used to tell a story and include any testimonials you might have about your product or service for your users</p>
                             <div class="flex gap-5 items-center">
@@ -493,7 +489,7 @@
                         </div>
     
                         <div class="flex justify-between md:justify-around">
-                            <div class="space-y-6">
+                            <div class="space-y-6 md:mr-10">
                                 <h4 class="font-bold text-lg">Quick Links</h4>
                                 <ul class="space-y-3">
                                     <li class="underline hover:no-underline hover:text-secondary"><a href="index.html#home">Home</a></li>
@@ -506,7 +502,7 @@
                                 </ul>
                             </div>
     
-                            <div class="space-y-6">
+                            <div class="space-y-6 md:ml-10">
                                 <h4 class="font-bold text-lg">Help</h4>
                                 <ul class="space-y-3">
                                     <li class="underline hover:no-underline hover:text-secondary"><a href="index.html#about">About Us</a></li>

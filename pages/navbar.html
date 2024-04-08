@@ -4,16 +4,15 @@
     <script src="navbar.js"></script>
 </head>
 <body>
-    <header class = "sticky top-0 z-50 transition-all duration-300">
-
+    <header class = "sticky top-0 z-50 transition-all duration-300 md:px-5 lg:px-5">
         <nav class = "container flex justify-between items-center">
             <div class = "py-5 text-secondary font-bold text-3xl">
                 <a href="../index.html#home">
-                    <img src="../logo.png" class=" ml-10 w-44 h-12 md:ml-0" alt="logo image"/>
+                    <img src="../logo.png" class=" w-56 h-10 " alt="logo image"/>
                 </a>
             </div>
             <div>
-                <ul class="hidden lg:flex items-center space-x-6">
+                <ul class="hidden lg:flex items-center space-x-5 lg:text-base text-sm md:mr-0">
                     <li><a href="../index.html#home" class = "hover:text-secondary ease-in duration-200">Home</a></li>
                     <li class="relative">
                         <button id="dropdownButton1" onClick="toggleDropdown1()" class = "hover:text-secondary ease-in duration-200 flex">Features
@@ -44,7 +43,7 @@
                     </li>
     
                     <li class="relative">
-                        <button id="dropdownButton3" onClick="toggleDropdown3()" class = "hover:text-secondary ease-in duration-200 flex">About Us<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
+                        <button id="dropdownButton3" onClick="toggleDropdown3()" class = "hover:text-secondary ease-in duration-200 flex">About<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
                     </button>
                     <div class="lg:absolute bg-white px-4 left-44 rounded-md md:my-3">
                         <ul id="dropdown3" class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden">
@@ -58,7 +57,7 @@
                     <li><a href="../index.html#blog" class = "internal-link hover:text-secondary ease-in duration-200">Blog</a></li>
                     <li><a href="../index.html#contact" class = "internal-link hover:text-secondary ease-in duration-200">Contact</a></li>
     
-                    <li><button class = "btn"><a href="products.html">Explore More!!</a></button></li>
+                    <li><button class = "btn"><a href="products.html">Explore</a></button></li>
                 </ul>
             </div>
     

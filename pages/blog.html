@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body class="bg-primary text-white tracking-wider">
+
+    <div id="navbar-placeholder"></div>
+
+    <headerImage>
+        <div class="flex">
+            <img src="../guidelines image.png" alt="Header Image" class="w-full h-96">
+            <!-- <img src="guidelinepic2.png" alt="header image 2" class="w-1/2 h-96"/> -->
+        </div>
+    </headerImage>
+
+    <main>
+
+        <section class="text-center mx-auto my-20">
+            <h1 class="title mb-6">FOLLOW THESE BEST PRACTICES TO AVOID BATTERY ACCIDENTS</h1>
+            <h4 class="font-bold text-gray-50 text-center mb-8 px-52">Please refer to your vehicle and battery owners’ manual to safely handle your lead-acid battery. Lead-acid batteries contain hydrogen-oxygen gases that can be explosive. Also, leakage of sulfuric acid can cause severe burns. Here are some precautions:</h4>
+        </section>
+
+        <section class="info mb-20">
+            <div class="flex">
+                <div class="bg-secondary w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-glasses text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+                <div class="bg-primary-light w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-fan text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="bg-primary-light w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-child text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+                <div class="bg-secondary w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-car-battery text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="bg-secondary w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-droplet text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+                <div class="bg-primary-light w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-ban-smoking text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="bg-primary-light w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-charging-station text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+                <div class="bg-secondary w-1/2 flex flex-col py-20 justify-center items-center">
+                    <div><i class="fa-solid fa-fire text-9xl py-2"></i></div>
+                    <div class="md:text-center md:w-1/2 text-center"><p class="leading-relaxed mb-10">Wear safety glasses or goggles and a face shield</p></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../navbar.js"></script>
+    <script src="../footer.js"></script>
+
+<!-- navigation links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Handle clicks on internal navigation links
+            $('.internal-link').on('click', function (e) {
+                e.preventDefault(); // Prevent the default anchor link behavior
+
+                var target = $(this).attr('href');
+
+                if (target.startsWith('#')) {
+                    // Smooth scroll within the same page for internal links
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top
+                    }, 800);
+                } else {
+                    // Navigate to a different page for external links
+                    window.location.href = target;
+                }
+            });
+        });
+    </script>
+
+    <!-- scroll nav, dropdown script -->
+    <script>
+        const navbar = document.querySelector('header');
+        window.onscroll = () => {
+            if(window.scrollY > 100) {
+                navbar.classList.add('bg-primary-dark');
+                navbar.classList.add('border-b');
+                navbar.classList.add('border-grey');
+            } else {
+                navbar.classList.remove('bg-primary-dark');
+                navbar.classList.remove('border-b');
+                navbar.classList.remove('border-grey');
+            }
+        }
+
+        //function dropdown
+        function toggleDropdown1(){
+            let dropdown1 = document.querySelector('#dropdown1');
+            let dropdown2 = document.querySelector('#dropdown2');
+            let dropdown3 = document.querySelector('#dropdown3');
+            dropdown1.classList.toggle('hidden');
+            dropdown2.classList.add('hidden');
+            dropdown3.classList.add('hidden');
+        }
+
+        //products dropdown
+        function toggleDropdown2(){
+            let dropdown1 = document.querySelector('#dropdown1');
+            let dropdown2 = document.querySelector('#dropdown2');
+            let dropdown3 = document.querySelector('#dropdown3');
+            dropdown1.classList.add('hidden');
+            dropdown3.classList.add('hidden');
+            dropdown2.classList.toggle('hidden');
+        }
+
+        //about us dropdown
+        function toggleDropdown3(){
+            let dropdown1 = document.querySelector('#dropdown1');
+            let dropdown2 = document.querySelector('#dropdown2');
+            let dropdown3 = document.querySelector('#dropdown3');
+            dropdown1.classList.add('hidden');
+            dropdown2.classList.add('hidden');
+            dropdown3.classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function (e) {
+                if (!dropdownButton1.contains(e.target) && !dropdown1.contains(e.target)) {
+                    dropdown1.classList.add('hidden');
+                }
+                if (!dropdownButton2.contains(e.target) && !dropdown2.contains(e.target)) {
+                    dropdown2.classList.add('hidden');
+                }
+                if (!dropdownButton3.contains(e.target) && !dropdown3.contains(e.target)) {
+                    dropdown3.classList.add('hidden');
+                }
+            });
+
+
+    </script>
+
+    <!-- menubar script -->
+    <script>
+    
+         const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelectorAll('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+        //function dropdown
+        function toggleDrop1(){
+            let dropdown1 = document.querySelector('#drop1');
+            let dropdown2 = document.querySelector('#drop2');
+            let dropdown3 = document.querySelector('#drop3');
+            dropdown1.classList.toggle('hidden');
+            dropdown2.classList.add('hidden');
+            dropdown3.classList.add('hidden');
+        }
+        //products dropdown
+        function toggleDrop2(){
+            let dropdown1 = document.querySelector('#drop1');
+            let dropdown2 = document.querySelector('#drop2');
+            let dropdown3 = document.querySelector('#drop3');
+            dropdown2.classList.toggle('hidden');
+            dropdown1.classList.add('hidden');
+            dropdown3.classList.add('hidden');
+        }
+        //about dropdown
+        function toggleDrop3(){
+            let dropdown1 = document.querySelector('#drop1');
+            let dropdown2 = document.querySelector('#drop2');
+            let dropdown3 = document.querySelector('#drop3');
+            dropdown3.classList.toggle('hidden');
+            dropdown2.classList.add('hidden');
+            dropdown1.classList.add('hidden');
+        }
+
+        document.addEventListener('click', function (e) {
+                if (!dropButton1.contains(e.target) && !drop1.contains(e.target)) {
+                    drop1.classList.add('hidden');
+                }
+                if (!dropButton2.contains(e.target) && !drop2.contains(e.target)) {
+                    drop2.classList.add('hidden');
+                }
+                if (!dropButton3.contains(e.target) && !drop3.contains(e.target)) {
+                    drop3.classList.add('hidden');
+                }
+            });
+    </script>
+    
+</body>
+</html>

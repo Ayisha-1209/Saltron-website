@@ -1,123 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="navbar.js"></script>
-</head>
-<body>
-    <header class = "sticky top-0 z-50 transition-all duration-300 md:px-5 lg:px-5">
-        <nav class = "container flex justify-between items-center">
-            <div class = "py-5 text-secondary font-bold text-3xl">
-                <a href="../index.html#home">
-                    <img src="../logo.png" class=" w-56 h-10 " alt="logo image"/>
-                </a>
-            </div>
-            <div>
-                <ul class="hidden lg:flex items-center space-x-5 lg:text-base text-sm md:mr-0">
-                    <li><a href="../index.html#home" class = "hover:text-secondary ease-in duration-200">Home</a></li>
-                    <li class="relative">
-                        <button id="dropdownButton1" onClick="toggleDropdown1()" class = "hover:text-secondary ease-in duration-200 flex">Features
-                        <img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
-                        </button>
-                        <div class="md:absolute left-44 bg-white px-4 rounded-md md:my-3">
-                           <ul id="dropdown1" class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden">
-                            <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="../index.html#features" class = "hover:text-secondary text-black ease-in duration-200">Services</a></li>
-                            <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="blog.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Safety Guidelines</a></li>
-                            <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="tips.html" class = "text-black hover:text-secondary ease-in duration-200">Buying Tips</a></li>
-                            <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="terms.html" class = "text-black hover:text-secondary ease-in duration-200">Terminology</a></li>
-                            <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="faq.html" class = "text-black hover:text-secondary ease-in duration-200">FAQ'S</a></li>
-                           </ul> 
-                        </div>
-                    </li>
-    
-                    <li class="relative">
-                        <button id="dropdownButton2" onClick="toggleDropdown2()" class = "hover:text-secondary ease-in duration-200 flex">Products<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
-                    </button>
-                    <div class="lg:absolute bg-white px-4 left-44 rounded-md md:my-3">
-                        <ul id="dropdown2" class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden">
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="automotivebatteries.html" class = "hover:text-secondary text-black ease-in duration-200 text-nowrap">Automotive Batteries</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="inverterbatteries.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Inverter Batteries</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="solarbatteries.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Solar Batteries</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="e-vehiclebatteries.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">E-Vehicle Batteries</a></li>
-                        </ul> 
-                     </div>
-                    </li>
-    
-                    <li class="relative">
-                        <button id="dropdownButton3" onClick="toggleDropdown3()" class = "hover:text-secondary ease-in duration-200 flex">About<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
-                    </button>
-                    <div class="lg:absolute bg-white px-4 left-44 rounded-md md:my-3">
-                        <ul id="dropdown3" class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden">
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="../index.html#about" class = "hover:text-secondary text-black ease-in duration-200 text-nowrap internal-link">About Saltron</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="gallery.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Ad Gallery</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a href="../index.html#testimonials" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Customer Reviews</a></li>
-                        </ul> 
-                     </div>
-                    </li>
-                    <li><a href="../index.html#testimonials" class = "internal-link hover:text-secondary ease-in duration-200">Testimonials</a></li>
-                    <li><a href="../index.html#blog" class = "internal-link hover:text-secondary ease-in duration-200">Blog</a></li>
-                    <li><a href="../index.html#contact" class = "internal-link hover:text-secondary ease-in duration-200">Contact</a></li>
-    
-                    <li><button class = "btn"><a href="products.html">Explore</a></button></li>
+  </head>
+  <body>
+    <header class="z-50 transition-all duration-300 md:px-5 lg:px-5">
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-secondary font-bold text-3xl">
+          <a href="../index.html#home">
+            <img src="../logo.png" class="w-56 h-10" alt="logo image" />
+          </a>
+        </div>
+        <div>
+          <ul
+            class="hidden lg:flex items-center space-x-5 lg:text-lg lg:font-bold text-sm md:mr-0"
+          >
+            <li>
+              <a
+                href="../index.html#home"
+                class="hover:text-secondary text-black ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            
+            <li class="relative">
+              <button
+                id="dropdownButton1"
+                onClick="toggleDropdown1()"
+                class="hover:text-secondary text-black ease-in duration-200 flex"
+              >
+                Features
+                <!-- <img class="w-6" src="../down-arrow-5-svgrepo-com.svg" /> -->
+              </button>
+              <div class="md:absolute left-44 bg-white px-4 rounded-md md:my-3">
+                <ul
+                  id="dropdown1"
+                  class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden"
+                >
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="../index.html#features"
+                      class="hover:text-secondary text-black ease-in duration-200"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="blog.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Safety Guidelines</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="tips.html"
+                      class="text-black hover:text-secondary ease-in duration-200"
+                      >Buying Tips</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="terms.html"
+                      class="text-black hover:text-secondary ease-in duration-200"
+                      >Terminology</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="faq.html"
+                      class="text-black hover:text-secondary ease-in duration-200"
+                      >FAQ'S</a
+                    >
+                  </li>
                 </ul>
-            </div>
-    
-            <!-- Mobile Screen -->
-    
-            <div id="hamburger" class="lg:hidden cursor-pointer z-50 px-10">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-    
-            <div id="menu" class="hidden bg-primary-dark h-[100vh] absolute inset-0">
-                <ul class="h-full grid place-items-center py-20">
-                    <li><a id="hLink" href="../index.html#home" class = "hover:text-secondary ease-in duration-200">Home</a></li>
-                    <li class="relative">
-                        <button id="dropButton1" onClick="toggleDrop1()" class="hover:text-secondary ease-in duration-200 flex">Features<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
-                        </button>
-                        <div class="lg:absolute left-44 bg-white px-4 rounded-md md:my-3">
-                            <ul id="drop1" class="absolute bg-white px-8 py-5 rounded-md hidden">
-                                <li class="hover:bg-slate-200 hover:rounded-md py-2">
-                                    <a id="hLink" href="../index.html#features" class = "hover:text-secondary text-black ease-in duration-200">Services</a>
-                                </li>
-                                <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="blog.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Safety Guidelines</a></li>
-                                <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="tips.html" class = "text-black hover:text-secondary ease-in duration-200">Buying Tips</a></li>
-                                <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="terms.html" class = "text-black hover:text-secondary ease-in duration-200">Terminology</a></li>
-                                <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="faq.html" class = "text-black hover:text-secondary ease-in duration-200">FAQ'S</a></li>
-                            </ul> 
-                        </div>
-                    </li>
-                    <li class="relative">
-                        <button id="dropButton2" onClick="toggleDrop2()" class = "hover:text-secondary ease-in duration-200 flex">Products<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
-                    </button>
-                    <div class="lg:absolute left-44 bg-white px-4 rounded-md md:my-3">
-                        <ul id="drop2" class="absolute bg-white px-8 py-5 rounded-md hidden">
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="automotivebatteries.html" class = "hover:text-secondary text-black ease-in duration-200 text-nowrap">Automotive Batteries</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="inverterbatteries.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Inverter Batteries</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="solarbatteries.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Solar Batteries</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="e-vehiclebatteries.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">E-Vehicle Batteries</a></li>
-                        </ul> 
-                     </div>
-                    </li>
-                    <li class="relative">
-                        <button id="dropButton3" onClick="toggleDrop3()" class = "hover:text-secondary ease-in duration-200 flex">About Us<img class="w-6" src="../down-arrow-5-svgrepo-com.svg"/>
-                    </button>
-                    <div class="lg:absolute left-44 bg-white px-4 rounded-md md:my-3">
-                        <ul id="drop3" class="absolute bg-white px-8 py-5 rounded-md hidden">
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="../index.html#about" class = "hover:text-secondary text-black ease-in duration-200 text-nowrap internal-link">About Saltron</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="gallery.html" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Ad Gallery</a></li>
-                         <li class="hover:bg-slate-200 hover:rounded-md py-2"><a id="hLink" href="../index.html#testimonials" class = "text-black hover:text-secondary ease-in duration-200 text-nowrap">Customer Reviews</a></li>
-                        </ul> 
-                     </div>
-                    </li>
-                    <li><a id="hLink" href="../index.html#testimonials" class = "hover:text-secondary ease-in duration-200">Testimonials</a></li>
-                    <li><a id="hLink" href="../index.html#blog" class = "hover:text-secondary ease-in duration-200">Blog</a></li>
-                    <li><a id="hLink" href="../index.html#contact" class = "hover:text-secondary ease-in duration-200">Contact</a></li>
-    
-                    <li><button class = "btn">Explore More</button></li>
+              </div>
+            </li>
+
+            <li class="relative">
+              <button
+                id="dropdownButton2"
+                onClick="toggleDropdown2()"
+                class="hover:text-secondary text-black ease-in duration-200 flex"
+              >
+                Products
+                <!-- <img
+                  class="w-6"
+                  src="../down-arrow-5-svgrepo-com.svg"
+                /> -->
+              </button>
+              <div class="lg:absolute bg-white px-4 left-44 rounded-md md:my-3">
+                <ul
+                  id="dropdown2"
+                  class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden"
+                >
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="automotivebatteries.html"
+                      class="hover:text-secondary text-black ease-in duration-200 text-nowrap"
+                      >Automotive Batteries</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="inverterbatteries.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Inverter Batteries</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="solarbatteries.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Solar Batteries</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="e-vehiclebatteries.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >E-Vehicle Batteries</a
+                    >
+                  </li>
                 </ul>
-            </div>
-        </nav>
+              </div>
+            </li>
+
+            <li class="relative">
+              <button
+                id="dropdownButton3"
+                onClick="toggleDropdown3()"
+                class="hover:text-secondary text-black ease-in duration-200 flex"
+              >
+                About
+                <!-- <img class="w-6" src="../down-arrow-5-svgrepo-com.svg" /> -->
+              </button>
+              <div class="lg:absolute bg-white px-4 left-44 rounded-md md:my-3">
+                <ul
+                  id="dropdown3"
+                  class="lg:absolute bg-white px-8 py-5 right-0 rounded-md hidden"
+                >
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="../index.html#about"
+                      class="hover:text-secondary text-black ease-in duration-200 text-nowrap internal-link"
+                      >About Saltron</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="gallery.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Ad Gallery</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2 px-2">
+                    <a
+                      href="../index.html#testimonials"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Customer Reviews</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="../index.html#testimonials"
+                class="internal-link hover:text-secondary text-black ease-in duration-200"
+                >Testimonials</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../index.html#blog"
+                class="internal-link hover:text-secondary text-black ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../index.html#contact"
+                class="internal-link hover:text-secondary text-black ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <button class="btn"><a href="products.html">Explore</a></button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Screen -->
+
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50 px-10">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div
+          id="menu"
+          class="hidden bg-primary-dark h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hLink"
+                href="../index.html#home"
+                class="hover:text-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <button
+                id="dropButton1"
+                onClick="toggleDrop1()"
+                class="hover:text-secondary ease-in duration-200 flex"
+              >
+                Features<img
+                  class="w-6"
+                  src="../down-arrow-5-svgrepo-com.svg"
+                />
+              </button>
+              <div class="lg:absolute left-44 bg-white px-4 rounded-md md:my-3">
+                <ul
+                  id="drop1"
+                  class="absolute bg-white px-8 py-5 rounded-md hidden"
+                >
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="../index.html#features"
+                      class="hover:text-secondary text-black ease-in duration-200"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="blog.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Safety Guidelines</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="tips.html"
+                      class="text-black hover:text-secondary ease-in duration-200"
+                      >Buying Tips</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="terms.html"
+                      class="text-black hover:text-secondary ease-in duration-200"
+                      >Terminology</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="faq.html"
+                      class="text-black hover:text-secondary ease-in duration-200"
+                      >FAQ'S</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative">
+              <button
+                id="dropButton2"
+                onClick="toggleDrop2()"
+                class="hover:text-secondary ease-in duration-200 flex"
+              >
+                Products<img
+                  class="w-6"
+                  src="../down-arrow-5-svgrepo-com.svg"
+                />
+              </button>
+              <div class="lg:absolute left-44 bg-white px-4 rounded-md md:my-3">
+                <ul
+                  id="drop2"
+                  class="absolute bg-white px-8 py-5 rounded-md hidden"
+                >
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="automotivebatteries.html"
+                      class="hover:text-secondary text-black ease-in duration-200 text-nowrap"
+                      >Automotive Batteries</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="inverterbatteries.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Inverter Batteries</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="solarbatteries.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Solar Batteries</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="e-vehiclebatteries.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >E-Vehicle Batteries</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="relative">
+              <button
+                id="dropButton3"
+                onClick="toggleDrop3()"
+                class="hover:text-secondary ease-in duration-200 flex"
+              >
+                About Us<img
+                  class="w-6"
+                  src="../down-arrow-5-svgrepo-com.svg"
+                />
+              </button>
+              <div class="lg:absolute left-44 bg-white px-4 rounded-md md:my-3">
+                <ul
+                  id="drop3"
+                  class="absolute bg-white px-8 py-5 rounded-md hidden"
+                >
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="../index.html#about"
+                      class="hover:text-secondary text-black ease-in duration-200 text-nowrap internal-link"
+                      >About Saltron</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="gallery.html"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Ad Gallery</a
+                    >
+                  </li>
+                  <li class="hover:bg-slate-200 hover:rounded-md py-2">
+                    <a
+                      id="hLink"
+                      href="../index.html#testimonials"
+                      class="text-black hover:text-secondary ease-in duration-200 text-nowrap"
+                      >Customer Reviews</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="../index.html#testimonials"
+                class="hover:text-secondary ease-in duration-200"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="../index.html#blog"
+                class="hover:text-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="../index.html#contact"
+                class="hover:text-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+
+            <li><button class="btn">Explore More</button></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-</body>
-
-
-
+  </body>
+</html>

@@ -12,7 +12,8 @@ module.exports = {
         "grey": "#333",
         "white": "#fff",
         "blob": "#A427DF",
-        "battery": "#3E7CA4"
+        "battery": "#3E7CA4",
+        "blue" : "#1C4D87"
       },
       keyframes: {
         move: {
